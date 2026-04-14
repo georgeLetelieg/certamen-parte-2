@@ -1,0 +1,136 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo general */
+body {
+    background-color: purple;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor del formulario */
+form {
+    background: #ffffff;
+    padding: 10px 40px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Títulos */
+form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+form p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Inputs y select */
+input, select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+/* Efecto focus */
+input:focus, select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.5);
+}
+
+/* Radios */
+.elDiv {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.elDiv input {
+    width: auto;
+    margin-right: 5px;
+}
+
+.elDiv label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+/* Separadores */
+hr {
+    margin: 15px 0;
+    border: none;
+    height: 1px;
+    background: #eee;
+}
+
+/* Botones */
+input[type="submit"] {
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Botón enviar */
+#enviarFormulario {
+    background: #667eea;
+    color: white;
+}
+
+#enviarFormulario:hover {
+    background: #5a67d8;
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Botón limpiar */
+#limpiarFormulario {
+    background: #e53e3e;
+    color: white;
+}
+
+#limpiarFormulario:hover {
+    background: #c53030;
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(229, 62, 62, 0.4);
+}
